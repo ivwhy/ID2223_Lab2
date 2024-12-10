@@ -25,7 +25,7 @@ CPUs, so big models will be slow).
 3. You are free to use other fine-tuning frameworks, such as Axolotl of HF
 FineTuning - you do not have to use the provided unsloth notebook.
 
-# ImproModel-Centric Approach
+# Improve Model-Centric Approach
 
 ### Model-Centric Approach
 
