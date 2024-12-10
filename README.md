@@ -29,12 +29,12 @@ FineTuning - you do not have to use the provided unsloth notebook.
 
 ### Model-Centric Approach
 
-- **Training Parameters:** Getting the training settings right is key to achieving the best results. Things like warmup steps and learning rates can make a big difference. Ideally, training should be done slowly for better performance, but we couldn’t fully explore this due to time constraints.  
-- **Choosing the Right Model:** We avoided models using bnb-4bit since they don’t work well with many deployment platforms. However, because this project focuses on efficient 4-bit training, we chose a compatible model for our needs.  
+- **Training Parameters:** Getting the training settings right is key to achieving the best results. Things like warmup steps and learning rates can make a big difference.
+- **Choosing the Right Model:** We should avoided models using bnb-4bit since they don’t work well with many deployment platforms. However, because this project focuses on efficient 4-bit training, we chose a compatible model for our needs.  
 - **Pre-trained Models:** Pre-trained instruction models aren’t always the best choice, especially for short training sessions. The improvements might not justify the effort, depending on the purpose.  
 
 ### Data-Centric Approach
 
-- **Picking the Right Dataset:** The dataset you choose can make or break your fine-tuning process. For example, we used the FineTome-100k dataset, which is great for educational content. If your goal is different, another dataset might work better.  
-- **Splitting the Data:** We split the data into training, evaluation, and testing sets to properly measure performance. Using datasets that already come pre-split can save time. The evaluation and test sets helped us track how well the model was doing.
+- **Picking the Right Dataset:** We used the FineTome-100k dataset, which is great for educational content. Depending on the goal, different datasets might work better as a fine tuning dataset.  
+- **Splitting the Data:** We split the data into training, evaluation, and testing sets to properly measure performance. Using datasets that already come pre-split can save time. The evaluation and test sets helped us measure the performance.
 
